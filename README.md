@@ -29,7 +29,6 @@ Quick Start
 and then directly run **OJSDTJ-RBPL/skeleton_recognition_pipeline.m**.
 2. For depth maps-based action recognition, please directly run **DMM-disLBP/depth_recognition_pipeline.m**.
 3. After obtaining the results of OJSDTJ-RBPL and DMM-disLBP, run **DFMSDV.m** to fuse these two methods. 
-For any problems with the code, please feel free to contact me: homerhm.ni@gmail.com
 
 Citing DFMSDV
 ----
@@ -44,6 +43,7 @@ If you find our approaches useful in your research, please consider citing:
   organization={Springer}
 }
 ```
+For any problems with the code, please feel free to contact me: homerhm.ni@gmail.com
 
 Acknowledgement
 ----
