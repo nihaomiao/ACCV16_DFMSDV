@@ -1,4 +1,4 @@
-% This code is used for change the depth data from the 'bin' format to 'mat' format.
+% This code is used for changing the depth data from the 'bin' format to 'mat' format.
 for i = 1:20
     idxcls = sprintf('a%02d', i);
     
