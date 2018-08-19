@@ -1,7 +1,7 @@
 DFMSDV
 ====
 
-Matlab Implementation of my ACCV16 paper 
+Matlab Implementation of our ACCV16 paper 
 [Action Recognition Based on Optimal Joint Selection and Discriminative Depth Descriptor](https://link.springer.com/chapter/10.1007/978-3-319-54184-6_17).
 
 Platform Description
@@ -10,7 +10,7 @@ Matlab R2012b, Windows 8.1.
 
 Data Preparation
 ----
-I think that I have no rights to redistribute data. So please prepare data as follows:
+We think that we have no rights to redistribute data. So please prepare data as follows:
 1. We use MSR Action3D dataset as our benchmark dataset. Please download it from this [link](https://www.uow.edu.au/~jz960/datasets/MSRAction3D.html). 
 And then run **DMM-disLBP/DepthPreProcessing.m** to change all the files in *MSRAction3D/Depth* from '.bin' to '.mat'. 
 Please put these '.mat' files to the directory *DMM-disLBP/data/Action3D*.
@@ -29,6 +29,7 @@ Quick Start
 and then directly run **OJSDTJ-RBPL/skeleton_recognition_pipeline.m**.
 2. For depth maps-based action recognition, please directly run **DMM-disLBP/depth_recognition_pipeline.m**.
 3. After obtaining the results of OJSDTJ-RBPL and DMM-disLBP, run **DFMSDV.m** to fuse these two methods. 
+For any problems with the code, please feel free to contact me: homerhm.ni@gmail.com
 
 Citing DFMSDV
 ----
