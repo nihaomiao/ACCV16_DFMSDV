@@ -6,7 +6,7 @@ Matlab Implementation of our ACCV16 paper
 
 Platform Description
 ----
-Matlab R2012b, Windows 8.1 64bits.
+Matlab R2012b, Windows 8.1 (64 bits).
 
 Data Preparation
 ----
@@ -47,10 +47,10 @@ For any problems with the code, please feel free to contact me: homerhm.ni@gmail
 
 Acknowledgement
 ----
-Our OJSDTJ-RBPL borrowed some functions from Raviteja Vemulapalli's work([paper](http://ravitejav.weebly.com/uploads/2/4/7/2/24725306/human_action_recognition_by_representing_3d_skeleton_as_point_in_lie_group.pdf)
+Our OJSDTJ-RBPL borrowed some functions from Raviteja Vemulapalli's work ([paper](http://ravitejav.weebly.com/uploads/2/4/7/2/24725306/human_action_recognition_by_representing_3d_skeleton_as_point_in_lie_group.pdf)
 ,[code](http://ravitejav.weebly.com/contact-form-for-action-recognition-code.html)) 
-and Our DMM-disLBP borrowed some functions from Chen Chen's work([paper](https://docs.google.com/viewer?a=v&pid=sites&srcid=ZGVmYXVsdGRvbWFpbnxjaGVucmVzZWFyY2hzaXRlfGd4OjMzMzcwNzY5YWViZDQ1MmY), 
+and Our DMM-disLBP borrowed some functions from Chen Chen's work ([paper](https://docs.google.com/viewer?a=v&pid=sites&srcid=ZGVmYXVsdGRvbWFpbnxjaGVucmVzZWFyY2hzaXRlfGd4OjMzMzcwNzY5YWViZDQ1MmY), 
 [code](https://sites.google.com/site/chenresearchsite/DMM-LBP.zip?attredirects=0&d=1)) 
-and Guoying Zhao's work([paper](https://www.sciencedirect.com/science/article/pii/S0031320312001604), [code](http://www.cse.oulu.fi/CMV/Downloads/LBPMatlab?action=AttachFile&do=view&target=disCLBP.zip)).
+and Guoying Zhao's work ([paper](https://www.sciencedirect.com/science/article/pii/S0031320312001604), [code](http://www.cse.oulu.fi/CMV/Downloads/LBPMatlab?action=AttachFile&do=view&target=disCLBP.zip)).
 
 
