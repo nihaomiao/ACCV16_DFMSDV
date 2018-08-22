@@ -6,7 +6,7 @@ Matlab Implementation of our ACCV16 paper
 
 Platform Description
 ----
-Matlab R2012b, Windows 8.1.
+Matlab R2012b, Windows 8.1 64bits.
 
 Data Preparation
 ----
