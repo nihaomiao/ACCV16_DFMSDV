@@ -4,6 +4,8 @@ DFMSDV
 Matlab Implementation of our ACCV16 paper 
 [Action Recognition Based on Optimal Joint Selection and Discriminative Depth Descriptor](https://link.springer.com/chapter/10.1007/978-3-319-54184-6_17).
 
+<div align=center><img src="examples/OJSDTJ-RBPL.png" width="585px" height="266px"/></div>
+
 Platform Description
 ----
 Matlab R2012b, Windows 8.1 (64 bits).
