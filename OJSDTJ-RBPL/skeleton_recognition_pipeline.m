@@ -43,24 +43,24 @@ te_subject_ind = ismember(subject_labels, te_subjects);
 % dataset
 load([data_dir, '/action_sets'], 'action_sets');
 
-% %% Optimal Joint Selection
-% disp ('Optimal Joing Selecting');
-% % Selecting joints based on their energy
-% load([data_dir, '/body_model']);
-% bones = body_model.bones;
-% relative_body_part_pairs = body_model.relative_body_part_pairs;
-% dominant_body_part_set = OJSDTJ(tr_subjects, data_dir, bones, relative_body_part_pairs, opt_joint_thre);
-% 
-% %% OJSDTJ-RBPL Feature Extraction
-% disp('Extracting OJSDTJ-RBPL for each action sequence');
-% for i = 1:n_actions
-%     disp(['OJSDTJ-RBPL for action ', mat2str(i)]);
-%     target_body_model.relative_body_part_pairs = relative_body_part_pairs(dominant_body_part_set{i}, :);
-%     % Using a state-of-the-art approach to describe selected joints
-%     OJSDTJ_Fea = generate_features(data_dir,  n_frames, target_body_model);
-%     Fea_Name = ['/OJSDTJ-A', mat2str(i)];
-%     save([OJSDTJ_dir, Fea_Name], 'OJSDTJ_Fea');
-% end
+%% Optimal Joint Selection
+disp ('Optimal Joing Selecting');
+% Selecting joints based on their energy
+load([data_dir, '/body_model']);
+bones = body_model.bones;
+relative_body_part_pairs = body_model.relative_body_part_pairs;
+dominant_body_part_set = OJSDTJ(tr_subjects, data_dir, bones, relative_body_part_pairs, opt_joint_thre);
+
+%% OJSDTJ-RBPL Feature Extraction
+disp('Extracting OJSDTJ-RBPL for each action sequence');
+for i = 1:n_actions
+    disp(['OJSDTJ-RBPL for action ', mat2str(i)]);
+    target_body_model.relative_body_part_pairs = relative_body_part_pairs(dominant_body_part_set{i}, :);
+    % Using a state-of-the-art approach to describe selected joints
+    OJSDTJ_Fea = generate_features(data_dir,  n_frames, target_body_model);
+    Fea_Name = ['/OJSDTJ-A', mat2str(i)];
+    save([OJSDTJ_dir, Fea_Name], 'OJSDTJ_Fea');
+end
 
 %% Running recognition for each subset of MSRAction3D
 for set = 1:3
